@@ -1,4 +1,4 @@
 # javascript 로 todo 앱 만들기 
 
 
-![](<img width="564" alt="image" src="https://github.com/Sodychoe/goorm-pbl/assets/113276452/00ca4f03-6341-4911-9996-0d6840cf816c">)
+![img]("https://github.com/Sodychoe/goorm-pbl/assets/113276452/e7303698-99e3-407c-a0df-4d8bcdf1501b")
