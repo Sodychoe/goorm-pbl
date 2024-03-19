@@ -6,4 +6,4 @@
 - [javascript 로 google spread-sheet 구현하기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl4)
 - [리엑트를 이용하여 CRUD 앱 만들기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl5)
 - [리엑트를 이용하여 쇼핑몰 앱 만들기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl6)
-
+- [리엑트를 이용하여 노트 앱 만들기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl7)
