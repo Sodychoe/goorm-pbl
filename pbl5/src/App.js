@@ -18,6 +18,7 @@ const App = () => {
     { id: 3, charge: "식비", amount: 1200 },
   ])
 
+
   const clearItems = () => {
     setExpenses([]);
   }
