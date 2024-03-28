@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container} from './ErrorPage.styles'
 import img from '../../assets/errorImg.png';
-import {ButtonFill} from '../../../../../../../Downloads/8.react-note-app/8.react-note-app/src/styles/styles';
+import {ButtonFill} from '../../styles/styles';
 import {useNavigate} from 'react-router-dom';
 
 const ErrorPage = () => {
