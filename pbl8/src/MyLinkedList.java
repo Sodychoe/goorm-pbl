@@ -1,11 +1,39 @@
 import java.util.Iterator;
 
-public class MyLinkedList<E> implements
-        Iterator<E> {
+public class MyLinkedList<E>{
 
     int size = 0;
     Node<E> first;
     Node<E> last;
+
+    public Iterator<E> iterator(){
+        MyLinkedList<E> list = this;
+        return new Iterator<E>() {
+            int cur = -1;
+
+            @Override
+            public boolean hasNext() {
+                return cur != list.size - 1;
+            }
+
+            @Override
+            public E next() {
+                cur++;
+                E e;
+                e = list.get(cur);
+                return e;
+            }
+
+            @Override
+            public void remove(){
+                if(-1 < cur && cur < list.size()){
+                    list.delete(cur);
+                    cur--;
+                    return;
+                }
+            }
+        };
+    }
 
 
     private static class Node<E>{
@@ -72,22 +100,29 @@ public class MyLinkedList<E> implements
 
     public E delete(int i){
         rangeCheck(i);
-        unLink(node(i));
+        return unLink(node(i));
     }
 
-    private void unLink(Node<E> x){
+    private E unLink(Node<E> x){
+        E item = x.item;
+        Node<E> next = x.next;
+        Node<E> prev = x.prev;
 
+        if(prev == null){
+            first = next;
+        }else{
+            prev.next = next;
+            x.prev = null;
+        }
 
+        if(next == null){
+            last = prev;
+        }else{
+            next.prev = prev;
+            x.next = null;
+        }
         x.item = null;
-    }
-
-    @Override
-    public boolean hasNext() {
-        return false;
-    }
-
-    @Override
-    public E next() {
-        return null;
+        size--;
+        return item;
     }
 }
