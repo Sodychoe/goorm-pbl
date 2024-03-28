@@ -1,4 +1,4 @@
-![image](https://github.com/Sodychoe/goorm-pbl/assets/113276452/35c37287-538d-4fe7-9008-b35e8a5a4159)![image](https://github.com/Sodychoe/goorm-pbl/assets/113276452/3bb15770-4e9b-4e8a-b643-356e557ce929)# goorm-pbl
+# goorm-pbl
 
 - [HTML/CSS 로 넷플릭스 사이트 만들기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl1)
 - [Javascript 로 todo app 구현하기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl2)
