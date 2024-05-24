@@ -11,3 +11,4 @@
 - [장바구니 기능 구현하기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl9)
 - [응답, 에러모델 만들기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl10)
 - [게시판 구현하기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl11)
+- [서버 애플리케이션 AWS에 배포하기](https://github.com/Sodychoe/goorm-pbl/tree/main/pbl12-13)
