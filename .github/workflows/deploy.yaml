@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+        run:
+            working-directory: ./pbl-12-13/muji
+
 
     steps:
       - uses: actions/checkout@v2
@@ -15,14 +19,10 @@ jobs:
         with:
           java-version: '1.8'
       - name: build
-        run: |
-          cd pbl-12-13/muji
-          ./gradlew clean build # 프로젝트의 루트 디렉토리에서 Gradle 빌드 실행
+        run: ./gradlew clean build
 
       - name: make zip
-        run: |
-          cd pbl-12-13/muji
-          zip -qq -r ../../goorm.zip . # 빌드 결과를 포함한 ZIP 파일 생성
+        run: zip -qq -r ../../goorm.zip .
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
