@@ -15,7 +15,7 @@ jobs:
         with:
           java-version: '1.8'
       - name: build
-        run: ./gradlew clean build
+        run: ./pbl-12-13/muji/gradlew clean build
 
       - name: make zip
         run: zip -qq -r ./goorm.zip /pbl-12-13/muji
@@ -31,7 +31,7 @@ jobs:
         run: aws s3 cp ./goorm.zip s3://awsgoorm-bucket/goorm.zip
 
       - name: Code deploy
-        run: aws deploy create-deployment --application-name mygoormapp-codeDeploy
+        run: aws deploy create-deployment --application-name goormtricount
           --deployment-config-name CodeDeployDefault.OneAtATime
           --deployment-group-name group1
           --s3-location bucket=awsgoorm-bucket,bundleType=zip,key=goorm.zip
