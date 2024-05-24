@@ -7,10 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-        run:
-            working-directory: ./pbl-12-13/muji
 
+    defaults:
+      run:
+        working-directory: ./pbl12-13/muji
 
     steps:
       - uses: actions/checkout@v2
