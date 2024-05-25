@@ -40,7 +40,7 @@ jobs:
         run: aws s3 cp ../../goorm.zip s3://awsgoorm-bucket/goorm.zip
 
       - name: Code deploy
-        run: aws deploy create-deployment --application-name goormtricount
+        run: aws deploy create-deployment --application-name mygoormapp
           --deployment-config-name CodeDeployDefault.OneAtATime
           --deployment-group-name group1
           --s3-location bucket=awsgoorm-bucket,bundleType=zip,key=goorm.zip
