@@ -17,5 +17,5 @@ else
 fi
 
 
-nohup java -jar /home/ec2-user/app/build/libs/tricountapi-1.0.jar 1>/dev/null 2>&1 &
-echo "run /home/ec2-user/app/build/libs/tricountapi-1.0.jar"
+nohup java -jar /home/ec2-user/app/build/libs/hello-1.0.jar 1>/dev/null 2>&1 &
+echo "run /home/ec2-user/app/build/libs/hello-1.0.jar"
